@@ -1,0 +1,706 @@
+/*================================================gallery================================================*/
+.oc_insta_class .insta_gallery{
+    display: inline-block;
+    width: 100%;
+}
+.oc_insta_class ul{
+    margin: 0px!important;
+    padding: 0px!important;
+}
+.oc_insta_class .insta_gallery ul li {
+    display: inline-block;
+    float: left;
+}
+.oc_insta_class .like_comment_div.hover_data a{
+    color: #fff;
+    text-decoration: none!important;
+    box-shadow: none!important;
+    line-height: 23px;
+}
+.oc_insta_class .ocinsta_like img {
+    width: 25px !important;
+    display: inline-block!important;
+    vertical-align: middle;
+    box-shadow: none!important;
+}
+.oc_insta_class .ocinsta_comment img {
+    width: 23px !important;
+    display: inline-block!important;
+    vertical-align: middle;
+    box-shadow: none!important;
+}
+.oc_insta_class .ocinsta_like span, .oc_insta_class .ocinsta_comment span {
+    display: inline-block!important;
+    vertical-align: middle;
+    font-size: 21px;
+}
+.oc_insta_class .ocinsta_like, .oc_insta_class .ocinsta_comment {
+    width: auto;
+    display: inline-block;
+    position: relative;
+    top: 0%;
+    margin: 0px 5px;
+    line-height: 10px;
+}
+.oc_insta_class .insta_discription {
+    margin-top: 0px;
+    color: #fff;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 500;
+}
+/*=============================================slisder css================================================*/
+.oc_insta_class .owl-theme .owl-nav {
+    top: 36%!important;
+}
+.oc_insta_class .owl-theme .owl-nav [class*=owl-] {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0,0.5 );
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0px;
+    line-height: 38px;
+
+}
+.oc_insta_class button.owl-prev span, .oc_insta_class button.owl-next span {
+    font-size: 34px;
+    padding: 0;
+    color: white;
+    display: block;
+    vertical-align: middle;
+    line-height: 36px;
+}
+.oc_insta_class .owl-prev {
+    left: 0px;
+    position: absolute;
+}
+.oc_insta_class .owl-next {
+    right: 0px;
+    position: absolute;
+}
+.oc_insta_class div.owl-prev:after {
+    content: "\f053";
+    font-family: 'FontAwesome';
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    left: -1px;
+}
+.oc_insta_class div.owl-next:after {
+    content: "\f054";
+    font-family: 'FontAwesome';
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    right: -1.5px;
+}
+.oc_insta_class .owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent!important;
+    color: #FFF;
+    text-decoration: none;
+}
+.oc_insta_class .owl-theme .owl-prev:hover:after{
+    color: #FFF;
+}
+.oc_insta_class .owl-theme .owl-next:hover:after{
+    color: #FFF;
+}
+.oc_insta_class .owl-dots {
+    position: inherit;
+    bottom: inherit;
+    left: inherit;
+    z-index: 99999999;
+    display: block;
+}
+
+
+
+/*================================================template 1================================================*/
+.oc_insta_class .instagram_main_class.galtem1 .insta_gallery ul li {
+    margin-bottom: 10px;
+}
+.oc_insta_class .instagram_main_class.galtem1 .insta_li_div{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    float: left;
+    border-radius: 10px;
+}
+.oc_insta_class .instagram_main_class.galtem1 .insta_li_div img.insta_img {
+    border-radius: 10px;
+    position: absolute;
+    width: auto;
+    top: 50%;
+    transition: transform 0.3s ease, filter 0.3s;
+    transform: scale(1) translate(-50%, -50%);
+    left: 50%;
+    transform-origin: 0 0;
+    backface-visibility: hidden;
+    height: 100% !important;
+    min-width: 100%;
+    max-width: inherit !important;
+}
+.oc_insta_class .instagram_main_class.galtem1 .insta_li_div:hover img.insta_img {
+    transform: scale(1.1) translate(-50%, -50%);
+    transform-origin: 0 0;
+    filter: grayscale(1);
+
+}
+.oc_insta_class .instagram_main_class.galtem1 .slide_img {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding-top: 100%;
+    position: relative;
+}
+.oc_insta_class .instagram_main_class.galtem1 .like_comment_div.hover_data {
+    position: absolute;
+    z-index: 2;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s, visibility 0.3s;
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.oc_insta_class .instagram_main_class.galtem1 .inner_comment_like_div {
+    transform: translateY(30%);
+    width: 80%;
+    max-height: 80%;
+    margin: 0 auto;
+    position: relative;
+    transition: 0.3s all ease;
+}
+.oc_insta_class .instagram_main_class.galtem1 .insta_li_div:hover .like_comment_div.hover_data {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    padding-top: 0;
+}
+.oc_insta_class .instagram_main_class.galtem1 .insta_li_div:hover .inner_comment_like_div {
+    transform: translateY(0);
+}
+/*slider*/
+.oc_insta_class .instagram_main_class.galtem1 .slide_main_div{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    float: left;
+    border-radius: 10px;
+}
+.oc_insta_class .instagram_main_class.galtem1 .slide_main_div img.insta_img {
+    border-radius: 10px;
+    position: absolute;
+    width: auto;
+    top: 50%;
+    transition: transform 0.3s ease, filter 0.3s;
+    transform: scale(1) translate(-50%, -50%);
+    left: 50%;
+    transform-origin: 0 0;
+    backface-visibility: hidden;
+    height: 100% !important;
+    min-width: 100%;
+    max-width: inherit !important;
+}
+.oc_insta_class .instagram_main_class.galtem1 .slide_main_div:hover img.insta_img {
+    transform: scale(1.1) translate(-50%, -50%);
+    transform-origin: 0 0;
+    filter: grayscale(1);
+}
+.oc_insta_class .instagram_main_class.galtem1 .slide_main_div:hover .inner_comment_like_div {
+    transform: translateY(0);
+}
+.oc_insta_class .instagram_main_class.galtem1 .owl-item:hover .like_comment_div.hover_data {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    padding-top: 0;
+}
+/*================================================end template 1================================================*/
+
+
+/*================================================template 2================================================*/
+.oc_insta_class .instagram_main_class.galtem2 img{
+    border-radius: 0px!important;
+    transition: 0.3s all ease;
+}
+.oc_insta_class .instagram_main_class.galtem2 .insta_gallery ul li{
+    padding: 0px!important;
+    position: relative;
+    overflow: hidden;
+}
+.oc_insta_class .instagram_main_class.galtem2 .insta_gallery ul li:hover .insta_li_div{ 
+    position: relative; 
+    z-index: 999999; 
+}
+.oc_insta_class .instagram_main_class.galtem2 .insta_li_div{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding-top: 100%;
+}
+.oc_insta_class .instagram_main_class.galtem2 .insta_li_div img.insta_img {
+    position: absolute;
+    width: auto;
+    top: 0;
+    transition: transform 0.3s ease, filter 0.3s;
+    left: 0;
+    backface-visibility: hidden;
+    height: 100% !important;
+    min-width: 100%;
+    max-width: inherit !important;
+}
+.oc_insta_class .instagram_main_class.galtem2 .insta_li_div:hover img.insta_img {
+    transform: scale(1.1);
+}
+
+.oc_insta_class .instagram_main_class.galtem2 .like_comment_div.hover_data {
+    position: absolute;
+    z-index: 2;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s, visibility 0.2s;
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+}
+.oc_insta_class .instagram_main_class.galtem2 .insta_li_div:hover .like_comment_div.hover_data {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    padding-top: 0;
+    
+}
+.oc_insta_class .instagram_main_class.galtem2 .inner_comment_like_div {
+    position: absolute;
+    bottom: 0%;
+    width: 80%;
+    left: 10%;
+    margin: 0 auto;
+}
+.oc_insta_class .instagram_main_class.galtem2 .insta_li_div:hover .inner_comment_like_div {
+    bottom: 32%;
+    transition: all 1s;
+}
+
+
+
+.oc_insta_class .instagram_main_class.galtem2 .owl-carousel .owl-item { 
+    overflow: hidden; 
+    margin-right: 0px!important;
+}
+.oc_insta_class .instagram_main_class.galtem2 .slide_main_div{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding-top: 100%;
+}
+.oc_insta_class .instagram_main_class.galtem2 .slide_main_div img.insta_img {
+    position: absolute;
+    width: auto;
+    top: 0;
+    transition: transform 0.3s ease, filter 0.3s;
+    left: 0;
+    backface-visibility: hidden;
+    height: 100% !important;
+    min-width: 100%;
+    max-width: inherit !important;
+}
+.oc_insta_class .instagram_main_class.galtem2 .slide_main_div:hover img.insta_img {
+    transform: scale(1.1);
+}
+.oc_insta_class .instagram_main_class.galtem2 .slide_main_div:hover .like_comment_div.hover_data {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    padding-top: 0;
+}
+.oc_insta_class .instagram_main_class.galtem2 .slide_main_div .inner_comment_like_div {
+    position: absolute;
+    bottom: 0%;
+    width: 80%;
+    left: 10%;
+    margin: 0 auto;
+}
+.oc_insta_class .instagram_main_class.galtem2 .owl-item:hover .inner_comment_like_div {
+    bottom: 32%;
+    transition: all 1s;
+}
+/*================================================end template 2================================================*/
+
+
+
+/*================================================masonry grid================================================*/
+.oc_insta_class .insta_masonry_grid-item img{
+    border-radius: 0px!important;
+    float: left;
+}
+.oc_insta_class .insta_masonry_grid-item .insta_li_div{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    float: left;
+}
+.oc_insta_class .masonry_main_class.galtem1 .insta_masonry_grid-item .like_comment_div.hover_data,
+.oc_insta_class .masonry_main_class.galtem2 .insta_masonry_grid-item .like_comment_div.hover_data {
+    position: absolute;
+    z-index: 2;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s, visibility 0.3s;
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+}
+
+.oc_insta_class .insta_masonry_grid-item .inner_comment_like_div {
+    width: 80%;
+    max-height: 80%;
+    margin: 0 auto;
+    position: relative;
+    transition: 0.3s all ease;
+}
+.oc_insta_class .insta_masonry_grid-item .insta_li_div:hover .like_comment_div.hover_data {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    padding-top: 0;
+}
+.oc_insta_class .insta_masonry_grid-item1 .insta_li_div:hover .inner_comment_like_div {
+    transform: translateY(0);
+}
+
+/*template1*/
+.oc_insta_class .masonry_main_class.galtem1 .insta_masonry_grid-item .insta_li_div:hover img.insta_img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease, filter 0.3s;
+    filter: grayscale(1);
+}
+/*template2*/
+.oc_insta_class .masonry_main_class.galtem2 .insta_masonry_grid-item {
+    padding: 0px!important;
+}
+.oc_insta_class .masonry_main_class.galtem2 .insta_masonry_grid-item .insta_li_div:hover img.insta_img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease, filter 0.3s;
+}
+
+/*template3*/
+.oc_insta_class .masonry_main_class.galtem3 .insta_masonry_grid-item .like_comment_div.hover_data {
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+}
+.oc_insta_class .masonry_main_class.galtem3 .insta_masonry_grid-item .insta_li_div:hover .like_comment_div.hover_data {
+    opacity: 1;
+}
+.oc_insta_class .masonry_main_class.galtem3 .insta_masonry_grid-item .insta_li_div:hover img.insta_img {
+    filter: grayscale(1);
+    transform: scale(1.1);
+    transition: transform 0.3s ease, filter 0.3s;
+}
+.oc_insta_class .oc_insta_class .masonry_main_class.galtem3 .insta_discription {
+    margin-top: 0px;
+    color: #fff;
+}
+.oc_insta_class .masonry_main_class.galtem3 .insta_masonry_grid-item .inner_comment_like_div {
+    width: 100%;
+}
+
+/*template4*/
+.oc_insta_class .masonry_main_class.galtem4 .like_comment_div.hover_data a {
+    color: #000;
+    line-height: 23px;
+}
+.oc_insta_class .masonry_main_class.galtem4 .inner_comment_like_div {
+    padding: 10px 0px;
+    display: inline-block;
+}
+.oc_insta_class .masonry_main_class.galtem4 .insta_discription{
+   color: #6d6d6d;
+}
+.oc_insta_class .masonry_main_class.galtem4 .like_comment_div.hover_data {
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 100%;
+    float: left;
+}
+.oc_insta_class .masonry_main_class.galtem4 .insta_masonry_grid-item .insta_li_div:hover img.insta_img {
+    filter: grayscale(1);
+    transform: scale(1.1);
+    transition: transform 0.3s ease, filter 0.3s;
+}
+.oc_insta_class .masonry_main_class .ocinsta_like span, 
+.oc_insta_class .masonry_main_class .ocinsta_comment span {
+    vertical-align: top;
+}
+/*================================================end masonry grid================================================*/
+
+
+/*================================================template 3================================================*/
+.oc_insta_class .instagram_main_class.galtem3 li{    
+    margin-bottom: 10px;
+}
+.oc_insta_class .instagram_main_class.galtem3 .insta_li_div{    
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding-top: 100%;
+}
+.oc_insta_class .instagram_main_class.galtem3 .insta_li_div img.insta_img { 
+    position: absolute;
+    width: auto;
+    top: 50%;
+    transition: transform 0.3s ease, filter 0.3s;
+    transform: scale(1) translate(-50%, -50%);
+    left: 50%;
+    transform-origin: 0 0;
+    backface-visibility: hidden;
+    height: 100% !important;
+    min-width: 100%;
+    max-width: inherit !important;
+}
+.oc_insta_class .instagram_main_class.galtem3 .insta_li_div:hover img.insta_img {
+    transform: scale(1.1) translate(-50%, -50%);
+    transform-origin: 0 0;
+    filter: grayscale(1);
+}
+.oc_insta_class .instagram_main_class.galtem3 .like_comment_div.hover_data {
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    text-align: center;
+    /*min-height: 45%;*/
+}
+.oc_insta_class .instagram_main_class.galtem3 .ocinsta_like, 
+.oc_insta_class .instagram_main_class.galtem3 .ocinsta_comment {
+    margin: 0px 10px;
+}
+
+
+
+.oc_insta_class .instagram_main_class.galtem3 .slide_main_div{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding-top: 100%;
+}
+.oc_insta_class .instagram_main_class.galtem3 .slide_main_div img.insta_img {
+    position: absolute;
+    width: auto;
+    top: 50%;
+    transition: transform 0.3s ease, filter 0.3s;
+    transform: scale(1) translate(-50%, -50%);
+    left: 50%;
+    transform-origin: 0 0;
+    backface-visibility: hidden;
+    height: 100% !important;
+    min-width: 100%;
+    max-width: inherit !important;
+}
+.oc_insta_class .instagram_main_class.galtem3 .slide_main_div:hover img.insta_img {
+    transform: scale(1.1) translate(-50%, -50%);
+    transform-origin: 0 0;
+    filter: grayscale(1);
+}
+
+
+/*================================================end template 3================================================*/
+/*================================================template 4================================================*/
+.oc_insta_class .instagram_main_class.galtem3 li{    
+    margin-bottom: 10px;
+}
+.oc_insta_class .instagram_main_class.galtem4 .insta_li_div{    
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    float: left;
+    /*padding-top: 100%;*/
+}
+.oc_insta_class .instagram_main_class.galtem4 .insta_li_div img.insta_img { 
+    position: absolute;
+    width: auto;
+    top: 50%;
+    transition: transform 0.3s ease, filter 0.3s;
+    transform: scale(1) translate(-50%, -50%);
+    left: 50%;
+    transform-origin: 0 0;
+    backface-visibility: hidden;
+    height: 100% !important;
+    min-width: 100%;
+    max-width: inherit !important;
+}
+.oc_insta_class .instagram_main_class.galtem4 .insta_li_div:hover img.insta_img {
+    transform: scale(1.1) translate(-50%, -50%);
+    transform-origin: 0 0;
+    filter: grayscale(1);
+}
+.oc_insta_class .instagram_main_class.galtem4 .ocinsta_like, 
+.oc_insta_class .instagram_main_class.galtem4 .ocinsta_comment {
+    margin: 0px 3px;
+}
+.oc_insta_class .instagram_main_class.galtem4 .like_comment_div.hover_data {
+   /* margin-top: 25px;*/
+    display: inline-block;
+    width: 100%;
+    background-color: #FFF;
+    position: relative;
+    z-index: 999;
+    text-align: center;
+    min-height: 170px!important;
+}
+.oc_insta_class .instagram_main_class.galtem4 .like_comment_div.hover_data a {
+    color: #000;
+}
+.oc_insta_class .instagram_main_class.galtem4 .inner_comment_like_div {
+    padding: 10px 0px;
+    display: inline-block;
+}
+.oc_insta_class .instagram_main_class.galtem4 .insta_discription{
+   color: #6d6d6d;
+}
+.oc_insta_class .instagram_main_class.galtem4 .slide_main_div{    
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    float: left;
+}
+.oc_insta_class .instagram_main_class.galtem4 .slide_img { 
+    overflow: hidden; 
+    width: 100%; 
+    position: relative; 
+    float: left; 
+    padding-top: 100%;
+}
+.oc_insta_class .instagram_main_class.galtem4 .slide_main_div img.insta_img { 
+    position: absolute;
+    width: auto;
+    top: 50%;
+    transition: transform 0.3s ease, filter 0.3s;
+    transform: scale(1) translate(-50%, -50%);
+    left: 50%;
+    transform-origin: 0 0;
+    backface-visibility: hidden;
+    height: 100% !important;
+    min-width: 100%;
+    max-width: inherit !important;
+}
+.oc_insta_class .instagram_main_class.galtem4 .slide_main_div:hover img.insta_img {
+    transform: scale(1.1) translate(-50%, -50%);
+    transform-origin: 0 0;
+    filter: grayscale(1);
+}
+.oc_insta_class .instagram_main_class.galtem4 .owl-theme .owl-nav{
+    top: 27%!important;
+}
+
+/*================================================end template 4================================================*/
+/*button*/
+.oc_insta_class .insta_btn_div {
+    text-align: center;
+}
+.oc_insta_class .insta_btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)!important;
+    transition: .3s all ease!important;
+}
+.oc_insta_class a.insta_btn {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none!important;
+}
+.oc_insta_class a:focus, button:focus, input:focus, textarea:focus {
+    outline: none!important;
+}
+.oc_insta_class .insta_btn_div a{
+    box-shadow: none!important;
+}
+/*end button*/
+
+
+
+
+.oc_insta_class .insta_share {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    top: 0%;
+    margin: 0px auto;
+    line-height: 20px;
+}
+.oc_insta_class .insta_share li {
+    width: 15%;
+    float: none!important;
+    line-height: 20px;
+    display: inline-block;
+}
+.oc_insta_class .ocinsta_time {
+    line-height: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+.oc_insta_class .instagram_main_class.galtem4 .ocinsta_time {
+    color: #6d6d6d;
+}
+.oc_insta_class .insta_slide.owl-carousel .owl-item img {
+    display: block;
+    width: auto;
+}
+.oc_insta_class .insta_slide .insta_share {
+    margin-top: 5px;
+}
+.oc_insta_class .insta_share img {
+    width: auto!important;
+}

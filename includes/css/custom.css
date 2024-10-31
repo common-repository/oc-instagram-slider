@@ -1,0 +1,133 @@
+img.ocinsta_rating_div {
+    width: 105px;
+    vertical-align: middle;
+}
+.ocinsta_container {
+    width: 90%;
+}
+.ocinsta_container h2 {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.ocinsta_container h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.ocinsta_container ul.tabs li.current{
+    background: #fff;
+    color: #222;
+    border-radius: 0px;
+}
+.ocinsta_container ul.tabs{
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+    list-style: none;
+}
+.ocinsta_container ul.tabs li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 15px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+    background-color: #dfdfdf;
+}
+.ocinsta_container .tab-content{
+    display: none;
+    background: #ffffff;
+    padding: 15px;
+}
+.ocinsta_container .tab-content.current{
+    display: inherit;
+}
+.ocinsta_container input#ocinsta-selectdata {
+    line-height: 20px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+.ocinsta_container input[type="submit"] {
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #2e6da4;
+    padding: 7px 17px;
+    background-color: #337ab7;
+    color: #fff;
+}
+.ocinsta_container .insta_display_option td{
+    width: 57%;
+}
+
+
+
+.ocinsta_container .radio {
+    margin: 16px 0;
+    cursor: pointer;
+    width: 22%;
+    display: inline-block;
+}
+.ocinsta_container .radio input {
+  display: none;
+}
+.ocinsta_container .radio input + span {
+  line-height: 22px;
+  height: 22px;
+  padding-left: 22px;
+  display: block;
+  position: relative;
+}
+.ocinsta_container .radio input + span:not(:empty) {
+  padding-left: 30px;
+}
+.ocinsta_container .radio input + span:before, .radio input + span:after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  display: block;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.ocinsta_container .radio input + span:before {
+  background: #d1d7e3;
+  transition: background 0.2s ease, -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+  transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+  transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2), -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+}
+.ocinsta_container .radio input + span:after {
+  background: #fff;
+  -webkit-transform: scale(0.78);
+  transform: scale(0.78);
+  transition: -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4), -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+}
+.ocinsta_container .radio input:checked + span:before {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+  background: #5d9bfb;
+}
+.ocinsta_container .radio input:checked + span:after {
+  -webkit-transform: scale(0.4);
+  transform: scale(0.4);
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.ocinsta_container .insta_getpro {
+    display: inline-block;
+    pointer-events: none;
+    opacity: 0.5;
+}
+a.instaget_pro {
+    color: red;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+}
